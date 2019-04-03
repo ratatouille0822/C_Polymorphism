@@ -15,16 +15,40 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <ClCompile Include="多态.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sendrecv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="framework.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="des.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="des_csp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CSocketProtocal.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="多态.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="sendrecv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CSocketProtocal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="des.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="des_csp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
