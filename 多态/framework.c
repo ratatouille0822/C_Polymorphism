@@ -27,7 +27,6 @@ int GetCSPFuncsWithEncrtpt(CSPInstence * csp_instence, CSP_INIT csp_init, CSP_SE
 
 	SetActualCSPFunctions(csp_instence, csp_init, csp_send, csp_get, csp_free);
 	SetActualDesFunctions(encrypt_instence, des_encrypt, des_decode);
-
 	pDataHead p;
 
 	csp_instence->csp_init(&p);
