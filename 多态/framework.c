@@ -32,11 +32,12 @@ int GetCSPFuncsWithEncrtpt(CSPInstence * csp_instence, CSP_INIT csp_init, CSP_SE
 
 	csp_instence->csp_init(&p);
 	
-	char demo[128] = "Hello!";
-	char buffer[128] = { 0 };
+	char demo[4*1024] = "Hello!";
+	char buffer[4*1024] = { 0 };
 	int length_of_encrypt_string = 0;
-	encrypt_instence->des_encrypt(demo, strlen(demo), buffer, &length_of_encrypt_string);
-	csp_instence->csp_send(p, buffer, strlen(demo));
+	int length_of_plaintext_string = strlen(demo);
+	encrypt_instence->des_encrypt(demo, length_of_plaintext_string, buffer, &length_of_encrypt_string);
+	csp_instence->csp_send(p, buffer, length_of_encrypt_string);
 	char recv[128] = { 0 };
 	int len = 0;
 
